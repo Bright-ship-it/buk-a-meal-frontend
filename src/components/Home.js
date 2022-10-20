@@ -25,7 +25,7 @@ function Home() {
       <div className="info">
         <div className="sect-1">
           <h1>Delicious Food For Your cravings</h1>
-          <p>We Cook Fresh And Healty Foods With Different Recipes</p>
+          <p>We Cook Fresh And Healthy Foods With Different Recipes</p>
           <NavLink to={"/"} exact="true" className="btn-menu">
             View-Menu &rarr;
           </NavLink>

@@ -6,6 +6,7 @@ import "../App.css";
 
 function Login() {
   return (
+    
     <div className="login">
       <div className="login-left">
 
@@ -30,6 +31,18 @@ function Login() {
         <NavLink to={"/"} exact="true" className="btn-menu">
         Login &rarr;
       </NavLink>
+
+      <div className="link">
+      <NavLink to={"/register"} exact="true" className="">
+      Dont have an Account? <span>click here!!</span>
+    </NavLink>
+      
+      </div>
+
+     
+
+     
+
       </div>
     </div>
   );

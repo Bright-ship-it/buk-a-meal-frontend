@@ -407,12 +407,13 @@ li:active {
   display: flex;
   padding: 10rem;
   margin-left: 20rem;
+
 }
 
 .login-left {
   background-color: #0a0a232d;
   width: 40%;
-  height: 60vh;
+  height: 65vh;
 }
 .login-left > img {
   border-radius: 50%;
@@ -452,6 +453,13 @@ li:active {
  margin-bottom: 5rem;
  font-weight: 900;
 }
+.login-right > .link{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+ }
 .login-right > h1{
   font-size: 3rem;
   letter-spacing: .4rem;
@@ -479,3 +487,64 @@ li:active {
   font-size: 1.5rem;
 }
 /*end of login*/
+
+
+/*start of sign-up*/
+
+.control label {
+  display: block;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  
+}
+
+.control input,
+.control textarea {
+  display: block;
+  font: inherit;
+  border-radius: 1rem;
+  border: .1rem solid #ccc;
+  padding: 1rem;
+  margin-left: 1rem;
+  width: 90%;
+  font-size: 1.5rem;
+ 
+  
+
+}
+
+.reg{
+  border-radius: 1rem;
+  background-color: #0a0a2356;
+  margin-top: 5rem;
+  padding: 3rem;
+  height: 85vh;
+  width: 40vw;
+  margin-left: 45rem;
+  
+}
+.reg > h1{
+  font-size: 2rem;
+  text-align: center;
+}
+.reg > .btn-menu{
+  background-color: #0a0a23;
+  border: none;
+  color: white;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin-top: 4rem;
+  margin-left: 20rem ;
+
+}
+
+/*end of sign-up*/
