@@ -17,7 +17,7 @@ function Home() {
     <div className="home">
       <div className="home-1">
         <Navbar />
-        <NavLink to={"/"} exact="true" className="btn-view-1">
+        <NavLink to={"/login"} exact="true" className="btn-view-1">
           Login
         </NavLink>
       </div>

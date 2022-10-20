@@ -65,8 +65,8 @@ body {
   padding: 1.5rem;
   text-align: center;
   text-decoration: none;
-  letter-spacing: .2rem;
- 
+  letter-spacing: 0.2rem;
+
   font-size: 2rem;
   font-weight: 700;
   border-radius: 1rem;
@@ -174,57 +174,48 @@ body {
   transform: scale(0.9);
 }
 
-
 /* end sect-2 images*/
 
-
-
 /*start of About part*/
-.about-us{
+.about-us {
   text-align: center;
   font-size: 3rem;
   background-color: rgba(172, 167, 167, 0.274);
 }
-.about{
+.about {
   display: flex;
   padding: 6rem;
   justify-content: space-evenly;
   flex-wrap: wrap;
- 
 }
-.about-image > img{
+.about-image > img {
   width: 44rem;
   height: 40rem;
   border-radius: 1rem;
- 
+  object-fit: cover;
 }
-.about-info{
+.about-info {
   margin-top: 3rem;
   width: 40rem;
   text-align: center;
- 
 }
 
-.about-info > p{
+.about-info > p {
   font-size: 2rem;
 }
-.about-info > h1{
+.about-info > h1 {
   font-size: 4rem;
   font-weight: 200;
   margin-bottom: 2rem;
 }
-.about-info > h3{
+.about-info > h3 {
   font-size: 2.5rem;
 }
-.about-info > .btn-text{
+.about-info > .btn-text {
   font-size: 2rem;
   margin-top: 3.5rem;
   font-weight: bold;
 }
-
-
-
-
 
 /*end of About part*/
 
@@ -285,7 +276,6 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  
 }
 .row:not(:last-child) {
   margin-bottom: 8rem;
@@ -317,13 +307,12 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   display: inline-block;
-  background-image: linear-gradient(to right,#0a0a23,#0a0a23);
+  background-image: linear-gradient(to right, #0a0a23, #0a0a23);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
   margin-bottom: 2rem;
-
 }
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -341,75 +330,152 @@ body {
   text-align: center;
 }
 
-
-
-.btn-text:link, .btn-text:visited {
+.btn-text:link,
+.btn-text:visited {
   font-size: 2rem;
   color: #0a0a23;
   display: inline-block;
   text-decoration: none;
   border-bottom: 0.1rem solid #0a0a23;
-  padding: .3rem; }
+  padding: 0.3rem;
+}
 
 .btn-text:hover {
   background-color: #0a0a23;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
+  transform: translateY(-2px);
+}
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
+  transform: translateY(0);
+}
 
+/*start of footer*/
 
-  /*start of footer*/
+.footer {
+  background-color: #0a0a23;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin: 0;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
 
-  
+.sect-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  color: white;
+  font-size: 1.7rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+.right {
+  width: 30%;
+}
 
-
-  .footer{
-
-    background-color: #0a0a23;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    margin: 0;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-  }
-
-
-  .sect-footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    color: white;
-    font-size: 1.7rem;
-    padding: 2rem;
-    margin: 2rem;
-  }
-  .right{
-    width: 30%;
-  }
-
-li:link, .li:visited {
+li:link,
+.li:visited {
   font-size: 2rem;
   color: #0a0a23;
   display: inline-block;
   text-decoration: none;
   border-bottom: 0.1rem solid #0a0a23;
-  padding: .3rem; }
+  padding: 0.3rem;
+}
 
 li:hover {
   font-size: 2.5rem;
   background-color: #0a0a23;
   color: #002ead;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
+  transform: translateY(-2px);
+}
 
 li:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
+  transform: translateY(0);
+}
+
+/*end of footer*/
+
+/*start of login*/
+
+.login {
+  display: flex;
+  padding: 10rem;
+  margin-left: 20rem;
+}
+
+.login-left {
+  background-color: #0a0a232d;
+  width: 40%;
+  height: 60vh;
+}
+.login-left > img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15rem;
+
+  width: 80%;
+}
+
+.login-right {
+  padding-top: 3rem;
+  width: 40%;
+  background-color: rgba(128, 128, 128, 0.103);
+}
+.login-right > .btn-menu{
+  background-color: #0a0a23;
   
+  color: white;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 17rem;
+}
+.login-right > p{
+ font-size: 2rem;
+ letter-spacing: .4rem;
+ text-align: center;
+ margin-bottom: 5rem;
+ font-weight: 900;
+}
+.login-right > h1{
+  font-size: 3rem;
+  letter-spacing: .4rem;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 3rem;
+ }
+.login-label {
+  display: block;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-label > label{
+  font-size: 2rem;
+}
 
+.login-label > input{
 
-   /*end of footer*/
+  border-radius: 1rem;
+  border: .2rem solid #ccc;
+  padding: 1rem;
+  margin-left: 6rem;
+  width: 60%;
+  font-size: 1.5rem;
+}
+/*end of login*/
