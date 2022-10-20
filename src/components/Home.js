@@ -48,7 +48,68 @@ function Home() {
         </div>
       </div>
 
-      <div className="about"></div>
+      <section className="about-us">
+     
+      <div className="about">
+      
+        <div className="about-image">
+          <img src={beef} alt="beef" />
+        </div>
+        <div className="about-info">
+          <h1>History</h1>
+          <h3>Strange Stories of Emergence of Healthy Foods</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo
+            quo, eligendi iusto incidunt perspiciatis repudiandae doloremque
+           
+          </p>
+          <NavLink to={"/"} exact="true" className="btn-text">
+          Read-More
+        </NavLink>
+         
+        </div>
+
+        <div className="about-image">
+        <img src={beef} alt="beef" />
+      </div>
+
+
+    
+    <div className="about-info">
+      <h1>History</h1>
+      <h3>Strange Stories of Emergence of Healthy Foods</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo
+        quo, eligendi iusto incidunt perspiciatis repudiandae doloremque
+       
+      </p>
+      <NavLink to={"/"} exact="true" className="btn-text">
+      Read-More
+    </NavLink>
+    </div>
+
+    <div className="about-image">
+    <img src={beef} alt="beef" />
+  </div>
+
+     <div className="about-info">
+      <h1>History</h1>
+      <h3>Strange Stories of Emergence of Healthy Foods</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo
+        quo, eligendi iusto incidunt perspiciatis repudiandae doloremque
+       
+      </p>
+      <NavLink to={"/"} exact="true" className="btn-text">
+      Read-More
+    </NavLink>
+    </div>
+      </div>
+      
+      
+      </section>
+
+      
 
       <section className="section-stories">
         <div className="u-center-text u-margin-bottom-big">
@@ -116,7 +177,7 @@ function Home() {
 
           <div className="links">
             <ul>
-            <h2>Links</h2>
+              <h2>Links</h2>
               <li>Home</li>
               <li>About-Us</li>
               <li>Contact-Us</li>
@@ -125,14 +186,14 @@ function Home() {
           </div>
 
           <div className="contact">
-          <h1>Contact</h1>
+            <h1>Contact</h1>
             <p>123 Street, Nairobi, Kenya</p>
             <p>+25471234566</p>
             <p>Tasty@gmail.com</p>
           </div>
 
           <div className="opening">
-          <h1>Opening-Hours</h1>
+            <h1>Opening-Hours</h1>
             <p>Monday - Saturday</p>
             <p>09AM - 09PM</p>
           </div>

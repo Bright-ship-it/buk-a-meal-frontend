@@ -177,6 +177,55 @@ body {
 
 /* end sect-2 images*/
 
+
+
+/*start of About part*/
+.about-us{
+  text-align: center;
+  font-size: 3rem;
+  background-color: rgba(172, 167, 167, 0.274);
+}
+.about{
+  display: flex;
+  padding: 6rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ 
+}
+.about-image > img{
+  width: 44rem;
+  height: 40rem;
+  border-radius: 1rem;
+ 
+}
+.about-info{
+  margin-top: 3rem;
+  width: 40rem;
+  text-align: center;
+ 
+}
+
+.about-info > p{
+  font-size: 2rem;
+}
+.about-info > h1{
+  font-size: 4rem;
+}
+.about-info > h3{
+  font-size: 2.5rem;
+}
+.about-info > .btn-text{
+  font-size: 2rem;
+  margin-top: 3.5rem;
+  font-weight: bold;
+}
+
+
+
+
+
+/*end of About part*/
+
 /*start of reviews part*/
 .story {
   width: 70%;
