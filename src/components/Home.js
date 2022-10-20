@@ -6,6 +6,10 @@ import rice from "../components/img/Beef-fries.jpg";
 import beef from "../components/img/rice.jpg";
 import person1 from "../components/img/person1.jpeg";
 import person2 from "../components/img/person2.jpeg";
+import chips from "../components/img/chips.jpeg";
+import eggs from "../components/img/eggs.jpeg";
+import meat from "../components/img/meat.jpg";
+
 
 import "../App.css";
 function Home() {
@@ -53,7 +57,7 @@ function Home() {
       <div className="about">
       
         <div className="about-image">
-          <img src={beef} alt="beef" />
+          <img src={meat} alt="beef" />
         </div>
         <div className="about-info">
           <h1>History</h1>
@@ -70,14 +74,14 @@ function Home() {
         </div>
 
         <div className="about-image">
-        <img src={beef} alt="beef" />
+        <img src={eggs} alt="beef" />
       </div>
 
 
     
     <div className="about-info">
-      <h1>History</h1>
-      <h3>Strange Stories of Emergence of Healthy Foods</h3>
+      <h1>Community</h1>
+      <h3>Healthy food in social networks, with us is interesting</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo
         quo, eligendi iusto incidunt perspiciatis repudiandae doloremque
@@ -89,12 +93,12 @@ function Home() {
     </div>
 
     <div className="about-image">
-    <img src={beef} alt="beef" />
+    <img src={chips} alt="beef" />
   </div>
 
      <div className="about-info">
-      <h1>History</h1>
-      <h3>Strange Stories of Emergence of Healthy Foods</h3>
+      <h1>Phillosophy</h1>
+      <h3>Only the Best Food,the best musicians the best guests</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo
         quo, eligendi iusto incidunt perspiciatis repudiandae doloremque
