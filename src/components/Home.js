@@ -171,12 +171,7 @@ function Home() {
         <div className="sect-footer">
           <div className="right">
             <h1>Tasty</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              suscipit ullam atque laborum dolor voluptate. Libero accusantium
-              perspiciatis hic officia, dicta amet dolorum distinctio explicabo
-              corporis doloribus rem laudantium consectetur!
-            </p>
+     
           </div>
 
           <div className="links">
