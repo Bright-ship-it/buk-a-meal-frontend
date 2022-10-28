@@ -26,7 +26,7 @@ function Allmeals() {
           View orders
         </NavLink>
 
-        <NavLink to={"/"} exact="true" className="btn-view-2">
+        <NavLink to={"/newmealform"} exact="true" className="btn-view-2">
         Add Meals
       </NavLink>
 

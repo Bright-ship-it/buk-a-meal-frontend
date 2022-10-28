@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.2);
+  width: 65%;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 25rem;
+  border: .3rem solid black;
+  
+}
