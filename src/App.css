@@ -569,13 +569,13 @@ li:active {
  
 }    
 .meals-dets{
-  background-color: whitesmoke;
+  background-color: rgba(128, 128, 128, 0.411);
   border-radius: 2rem;
   margin: 2rem;
   padding-bottom: 2rem;
 }
 
-.meals-image{
+.meals-image > img{
   object-fit: cover;
 }
 .meals-image img{
