@@ -29,14 +29,7 @@ function Allmealsdetails() {
 
     
   
-    const history = useNavigate();
-    const handleDelete = () => {
-      fetch("/meals/" +meal.id, {
-        method: "DELETE",
-      }).then(() => {
-        history("/allmeals");
-      });
-    };
+  z
   
     return (
       <div>
