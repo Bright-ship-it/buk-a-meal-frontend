@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Admin from './components/Admin';
 import Allmeals from './components/Allmeals';
+import Allmealsdetails from './components/Allmealsdetails';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/register" element={<Register /> } />
         <Route path="/admin" element={<Admin /> } />
         <Route path="/allmeals" element={<Allmeals /> } />
-    
+        <Route path="/allmealsdetails/:mealId" element={<Allmealsdetails /> } />
+      
         
     </Routes>
 </Router>

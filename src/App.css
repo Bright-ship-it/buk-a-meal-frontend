@@ -58,6 +58,8 @@ body {
 
 /*start of home*/
 
+
+
 .btn-view-1 {
   background-color: #0a0a23;
   border: none;
@@ -627,8 +629,67 @@ btn-meals{
 }
 
 
+.btn-view-2 {
+  background-color: #0a0a23;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+
+
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
 
 /* end of allartsDEtails */
+
+.meals-dets-1{
+  box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 80%;
+  margin-top: 2rem;
+
+}
+.det-container{
+  padding-left: 25rem;
+
+}
+.meals-det-1{
+  background-color:white;
+  border-radius: 3rem;
+  /* margin: 3rem; */
+  padding-bottom: 3rem;
+  /* width: 80%; */
+}
+.meals-image-1{
+  object-fit: cover;
+}
+.meals-image-1 img{
+  width: 100%;
+  height: 38vh;
+  
+}
+.meals-det-1 > h2{
+  font-size: 4rem;
+  letter-spacing: .5rem;
+  font-weight: 900;
+  color: black;
+}
+.meals-det-1 >h3{
+  font-size: 3rem;
+  font-weight: 800;
+  color: black;
+}
+.meals-det-1 > h4{
+  font-size: 2rem;
+}
+
 
 /*End All meals*/
 
