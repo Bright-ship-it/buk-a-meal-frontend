@@ -727,6 +727,9 @@ btn-meals{
   padding-bottom: 3rem;
   /* width: 80%; */
 }
+.meals-det-1 > h5{
+font-size: 2.5rem;
+}
 .meals-image-1{
   object-fit: cover;
 }

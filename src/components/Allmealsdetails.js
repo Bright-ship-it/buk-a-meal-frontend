@@ -49,9 +49,9 @@ function Allmealsdetails() {
         </div>
         <div className="meals-det-1">
           <h2>{meal.name}</h2>
-          <h3>ingredient:{meal.ingredients}</h3>
+          <h3>ingredient: {meal.ingredients}</h3>
           <h3>Price Ksh{meal.price}</h3>
-          <h4>{meal.description}</h4>
+          <h5>Desc: {meal.description}</h5>
           <h4>{meal.created_at}</h4>
         </div>
 

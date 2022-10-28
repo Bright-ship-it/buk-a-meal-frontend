@@ -22,12 +22,15 @@ function NewMealForm() {
     fetch("/meals", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type':'application/json',
+        'Application' : 'application/json'
       },
       body: JSON.stringify(Meal),
+    
     }).then(() => {
       history("/allmeals");
-    });
+    })
+    .catch((error)=>console.log(error))
   }
 
   return (
@@ -61,7 +64,6 @@ function NewMealForm() {
         <div className={classes.control}>
           <label htmlFor="price">price</label>
           <input
-            type="text"
             required
             id="price"
             value={price}

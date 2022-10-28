@@ -1,12 +1,13 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+
+import Allmeals from './Allmeals';
 
 function Admin() {
   return (
     <div>
-    <NavLink to={"/allmeals"} exact="true" className="btn-view-1">
-    view All Menus
-  </NavLink>
+
+    <Allmeals />
+  
     </div>
   )
 }
