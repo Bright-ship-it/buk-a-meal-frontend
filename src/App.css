@@ -27,15 +27,25 @@ body {
 }
 
 /*start of navbar*/
+
+.navs{
+  padding: 3rem;
+ 
+}
+.navs > .btn-view-2{
+ margin: 2rem;
+ 
+}
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 10rem;
+  padding-left: 10rem;
+  padding-right: 4rem;
 }
 .site-title {
   font-size: 4.5rem;
   font-weight: bolder;
-  padding-right: 65rem;
+  padding-right: 45rem;
 }
 .nav ul {
   list-style: none;
@@ -60,7 +70,7 @@ body {
 
 
 
-.btn-view-1 {
+/* .btn-view-1 {
   background-color: #0a0a23;
   border: none;
   color: white;
@@ -77,11 +87,53 @@ body {
 .btn-view-1:hover {
   background-color: #002ead;
   transition: 0.7s;
-}
+} */
 .home-1 {
   display: flex;
-  padding: 0;
-  margin: 0;
+ 
+}
+.home-1 > .btn-view-1{
+  margin-left: 20rem;
+  background-color: #0a0a23;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  margin-top: 1rem;
+ 
+}
+
+.home-1 > .btn-view-1:hover{
+  background-color: #002ead;
+  transition: 0.7s;
+
+ 
+}
+
+.sect-1 > .btn-menu {
+  background-color: #0a0a23;
+  border: none;
+  color: white;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin-top: 6rem;
+}
+.btn-menu:hover {
+  background-color: #002ead;
+  transition: 0.7s;
 }
 
 .info {
@@ -645,6 +697,14 @@ btn-meals{
 }
 
 
+.btn-view-2:hover{
+  background-color: #002ead;
+  transition: 0.7s;
+
+}
+
+
+
 /* end of allartsDEtails */
 
 .meals-dets-1{
@@ -688,6 +748,9 @@ btn-meals{
 }
 .meals-det-1 > h4{
   font-size: 2rem;
+}
+.meals-con{
+  padding-left: 20rem;
 }
 
 

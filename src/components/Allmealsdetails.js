@@ -29,20 +29,27 @@ function Allmealsdetails() {
 
     
   
-  z
+    const history = useNavigate();
+    const handleDelete = () => {
+      fetch("/meals/" +meal.id, {
+        method: "DELETE",
+      }).then(() => {
+        history("/allmeals");
+      });
+    };
   
     return (
       <div>
       <Navbar />
-      <div className="meals-container">
+      <div className="meals-con">
 
       <div className="meals-dets-1" key={meal.id}>
         <div className="meals-image-1">
           <img src={meal.image_url} alt="article url" />
         </div>
         <div className="meals-det-1">
-          <h2>Title:{meal.name}</h2>
-          <h3>ingredients:{meal.ingredients}</h3>
+          <h2>{meal.name}</h2>
+          <h3>ingredient:{meal.ingredients}</h3>
           <h3>Price Ksh{meal.price}</h3>
           <h4>{meal.description}</h4>
           <h4>{meal.created_at}</h4>

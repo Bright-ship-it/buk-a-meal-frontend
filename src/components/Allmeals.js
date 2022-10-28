@@ -21,9 +21,16 @@ function Allmeals() {
     <div>
       <div className="home-1">
         <Navbar />
+        <div className="navs">
         <NavLink to={"/"} exact="true" className="btn-view-2">
           View orders
         </NavLink>
+
+        <NavLink to={"/"} exact="true" className="btn-view-2">
+        Add Meals
+      </NavLink>
+
+      </div>
       </div>
       <div className="meals-board">
         <h1 className="board">Meals Board</h1>
