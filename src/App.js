@@ -9,6 +9,8 @@ import Admin from './components/Admin';
 import Allmeals from './components/Allmeals';
 import Allmealsdetails from './components/Allmealsdetails';
 import NewMealForm from './components/NewMealForm';
+import Meal from './components/Meals/meal'
+import MealDetails from './components/Meals/allmeals';
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
         <Route path="/allmeals/" element={<Allmeals /> } />
         <Route path="/newmealform/" element={<NewMealForm /> } />
         <Route path="/allmealsdetails/:mealId" element={<Allmealsdetails /> } />
+        <Route path="/meals" element={<Meal /> } />
+        <Route path="/meal/:mealId" element={<MealDetails /> } />
+
       
         
     </Routes>
