@@ -619,7 +619,11 @@ li:active {
   justify-content: space-between;
   padding: 5rem;
  
-}    
+}   
+
+.meals{
+  display: flex;
+}
 .meals-dets{
   background-color: rgba(128, 128, 128, 0.411);
   border-radius: 2rem;
@@ -725,7 +729,7 @@ btn-meals{
   border-radius: 3rem;
   /* margin: 3rem; */
   padding-bottom: 3rem;
-  /* width: 80%; */
+
 }
 .meals-det-1 > h5{
 font-size: 2.5rem;
@@ -759,3 +763,28 @@ font-size: 2.5rem;
 
 /*End All meals*/
 
+.paginationBtns{
+  width:80%;
+  height: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+}
+.paginationBtns a{
+  padding: 1rem;
+  margin: .8rem;
+  border-radius: 1rem;
+  border: .1rem solid black;
+  color: #2b2eff;
+  cursor: pointer;
+}
+.paginationBtns a:hover{
+  color: white;
+  background-color: #2b2eff;
+}
+.paginationActive{
+  color: white;
+  background-color: #2b2eff;
+
+}

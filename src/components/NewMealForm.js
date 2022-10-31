@@ -29,6 +29,7 @@ function NewMealForm() {
     
     }).then(() => {
       history("/allmeals");
+      alert(" Meal was created  successfully")
     })
     .catch((error)=>console.log(error))
   }
