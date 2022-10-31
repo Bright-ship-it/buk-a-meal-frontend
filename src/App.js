@@ -11,7 +11,7 @@ import Allmealsdetails from './components/Allmealsdetails';
 import NewMealForm from './components/NewMealForm';
 import Meal from './components/Meals/meal'
 import MealDetails from './components/Meals/allmeals';
-
+import MainMenu from './components/MainMenu';
 function App() {
   return (
     <div>
@@ -27,6 +27,7 @@ function App() {
         <Route path="/allmealsdetails/:mealId" element={<Allmealsdetails /> } />
         <Route path="/meals" element={<Meal /> } />
         <Route path="/meal/:mealId" element={<MealDetails /> } />
+        <Route path="/dashboard" element={<MainMenu /> } />
 
       
         
