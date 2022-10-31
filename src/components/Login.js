@@ -43,14 +43,14 @@ function Login() {
     }).then((r) => {
       if (r.ok) {
         r.json().then((user) => {
-          user.admin === true ? navigate("/admin") : navigate("/");
+          user.admin === true ? navigate("/admin") : navigate("/dashboard");
         });
 
         setEmail("");
         setPassword("");
         setIsShown((current) => !current);
       } else {
-        alert("failed to log in");
+        alert("Failed to Log in");
       }
     });
 
