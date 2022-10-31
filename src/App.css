@@ -33,7 +33,7 @@ body {
  
 }
 .navs > .btn-view-2{
- margin: 2rem;
+ margin: .5rem;
  
 }
 .nav {
@@ -45,7 +45,7 @@ body {
 .site-title {
   font-size: 4.5rem;
   font-weight: bolder;
-  padding-right: 51rem;
+  padding-right: 54rem;
 }
 .nav ul {
   list-style: none;
@@ -88,6 +88,10 @@ body {
   background-color: #002ead;
   transition: 0.7s;
 } */
+
+
+
+
 .home-1 {
   display: flex;
  
