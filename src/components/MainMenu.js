@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import food from "../components/img/foof.jpg";
 import rice from "../components/img/Beef-fries.jpg";
 import beef from "../components/img/rice.jpg";
@@ -12,14 +12,42 @@ import meat from "../components/img/meat.jpg";
 
 
 import "../App.css";
-function Home() {
+function MainMenu() {
+    const navigate = useNavigate()
+    function handleDestroySession(e) {
+    e.preventDefault();
+    fetch("/logout", {
+      method: "DELETE"
+    })
+    .then((r) => {
+      if (r.ok) {
+        navigate("/")
+      
+ 
+
+      }
+      else{
+        alert()
+
+      }
+    });
+    
+
+  }
+
+
   return (
     <div className="home">
       <div className="home-1">
         <Navbar />
-        <NavLink to={"/login"} exact="true" className="btn-view-1">
-          Login
-        </NavLink>
+        {/* <NavLink to={"/login"} exact="true" className="btn-view-1">
+          Logout
+
+        </NavLink> */}
+        <button className="btn-view-1" onClick={handleDestroySession}>
+            Logout
+
+        </button>
       </div>
 
       <div className="info">
@@ -202,4 +230,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default MainMenu;
