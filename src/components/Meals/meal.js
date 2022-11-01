@@ -17,9 +17,14 @@ function Meals() {
     <div>
     <Navbar />
     <div className="meals-board-one">
-      <h1 className="board-one">Todays Menu</h1>
-      <h1 className="board-one">Orders</h1>
-      <h1 className="board-one">Order History</h1>
+    <h1 className="board-one">Daily Menus: </h1>
+      <h1 className="board-one">Monday</h1>
+      <h1 className="board-one">Tuesday</h1>
+      <h1 className="board-one">Wednesday</h1>
+      <h1 className="board-one">Thursday</h1>
+      <h1 className="board-one">Friday</h1>
+      <h1 className="board-one">Saturday</h1>
+      <h1 className="board-one">Sunday</h1>
     </div>
 
     <div className="meals-container-one">
