@@ -12,6 +12,13 @@ import NewMealForm from './components/NewMealForm';
 import Meal from './components/Meals/meal'
 import MealDetails from './components/Meals/allmeals';
 import MainMenu from './components/MainMenu';
+import MondayMeal from './components/Meals/MondayMeal';
+import TuesdayMeal from './components/Meals/TuesdayMeal';
+import WednesdayMeal from './components/Meals/WednesdayMeal';
+import ThursdayMeal from './components/Meals/ThursdayMeal';
+import FridayMeal from './components/Meals/FridayMeal';
+import SaturdayMeal from './components/Meals/SaturdayMeal';
+import SundayMeal from './components/Meals/SundayMeal';
 function App() {
   return (
     <div>
@@ -28,6 +35,13 @@ function App() {
         <Route path="/meals" element={<Meal /> } />
         <Route path="/meal/:mealId" element={<MealDetails /> } />
         <Route path="/dashboard" element={<MainMenu /> } />
+        <Route path="/mondaymenu" element={<MondayMeal /> } />
+        <Route path="/tuesdaymenu" element={<TuesdayMeal /> } />
+        <Route path="/wednesdaymenu" element={<WednesdayMeal /> } />
+        <Route path="/thursdaymenu" element={<ThursdayMeal /> } />
+        <Route path="/fridaymenu" element={<FridayMeal /> } />
+        <Route path="/saturdaymenu" element={<SaturdayMeal /> } />
+        <Route path="/sundaymenu" element={<SundayMeal /> } />
 
       
         
