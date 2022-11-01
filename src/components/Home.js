@@ -9,18 +9,19 @@ import person2 from "../components/img/person2.jpeg";
 import chips from "../components/img/chips.jpeg";
 import eggs from "../components/img/eggs.jpeg";
 import meat from "../components/img/meat.jpg";
+import NavBarLanding from './NavBarLanding'
 
 
 import "../App.css";
 function Home() {
   return (
     <div className="home">
-      <div className="home-1">
-        <Navbar />
-        <NavLink to={"/login"} exact="true" className="btn-view-1">
+      {/* <div className="home-1"> */}
+        <NavBarLanding />
+        {/* <NavLink to={"/login"} exact="true" className="btn-view-1">
           Login
-        </NavLink>
-      </div>
+        </NavLink> */}
+      {/* </div> */}
 
       <div className="info">
         <div className="sect-1">

@@ -19,7 +19,7 @@ function Navbar() {
           Account
         </NavLink>
         <NavLink to={"/"} exact="true" className="btn-text">
-          Orders
+          Cart
         </NavLink>
         
       </ul>
@@ -27,7 +27,7 @@ function Navbar() {
       </div>
       
     </nav>
-    <div className="meals-board-one">
+    {/* <div className="meals-board-one">
     <h1 className="board-one">Daily Menus: </h1>
     <Link to={`/mondaymenu`}>
       <button className="board-one">Monday</button >
@@ -50,7 +50,7 @@ function Navbar() {
       <Link to={`/sundaymenu`}>
       <button className="board-one">Sunday</button >
       </Link>
-    </div>
+    </div> */}
 
     </div> 
   );

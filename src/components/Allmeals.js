@@ -11,7 +11,7 @@ function Allmeals() {
 
   
 
-  const mealsPerPage = 2;
+  const mealsPerPage = 5;
   const pagesVisited = pageNumber * mealsPerPage;
 
   const pageCount = Math.ceil(meal.length / mealsPerPage);
@@ -60,7 +60,7 @@ function Allmeals() {
 
   return (
     <div>
-      <div className="home-1">
+      {/* <div className="home-1"> */}
         <Navbar />
         <div className="navs">
           <NavLink to={"/"} exact="true" className="btn-view-2">
@@ -71,10 +71,10 @@ function Allmeals() {
             Add Meals
           </NavLink>
         </div>
-      </div>
-      <div className="meals-board">
+      {/* </div> */}
+      {/* <div className="meals-board">
         <h1 className="board">Meals Board</h1>
-      </div>
+      </div> */}
       {displayMeals}
 
       <ReactPaginate

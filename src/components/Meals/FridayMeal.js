@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import '../Meals/meal.css'
 
-function Meals() {
+function FridayMeal() {
     const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("/categories/1")
+    fetch("/categories/5")
       .then((response) => response.json())
       .then((data) => setCards(data.meals));
   }, []);
@@ -16,7 +16,18 @@ function Meals() {
   return (
     <div>
     <Navbar />
-
+    {/* <div className="meals-board-one">
+    <h1 className="board-one">Daily Menus: </h1>
+    <Link to={`/meal/`}>
+      <button className="board-one">Monday</button >
+      </Link>
+      <h1 className="board-one">Tuesday</h1>
+      <h1 className="board-one">Wednesday</h1>
+      <h1 className="board-one">Thursday</h1>
+      <h1 className="board-one">Friday</h1>
+      <h1 className="board-one">Saturday</h1>
+      <h1 className="board-one">Sunday</h1>
+    </div> */}
 
     <div className="meals-container-one">
       {cards.map((card) => (
@@ -50,6 +61,6 @@ function Meals() {
 }
 
 
-export default Meals
+export default FridayMeal;
 
 
