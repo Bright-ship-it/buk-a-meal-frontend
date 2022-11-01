@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import '../App.css';
 
-function Navbar() {
+function Navbar({user}) {
   return (
    <div><nav className="nav">
       <div className="site-title">
@@ -15,9 +15,12 @@ function Navbar() {
         <NavLink to={"/"} exact="true" className="btn-text">
           Home
         </NavLink>
-        <NavLink to={"/"} exact="true" className="btn-text">
-          Account
-        </NavLink>
+      
+
+        <Link to={"/account"} className="btn-text" >
+          <h3 className="">{user ? (`${user.first_name}`) : "Account"}</h3>
+        </Link>
+
         <NavLink to={"/"} exact="true" className="btn-text">
           Orders
         </NavLink>

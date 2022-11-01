@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
 import food from "../components/img/foof.jpg";
 import rice from "../components/img/Beef-fries.jpg";

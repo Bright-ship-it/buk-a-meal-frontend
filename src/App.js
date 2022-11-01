@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import React, { useState } from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './components/Home';
 import Login from './components/Login';
@@ -19,7 +19,11 @@ import ThursdayMeal from './components/Meals/ThursdayMeal';
 import FridayMeal from './components/Meals/FridayMeal';
 import SaturdayMeal from './components/Meals/SaturdayMeal';
 import SundayMeal from './components/Meals/SundayMeal';
+
+
+import Profile from "./components/Profile";
 function App() {
+  const [user, setUser] = useState(null);
   return (
     <div>
 
@@ -42,6 +46,7 @@ function App() {
         <Route path="/fridaymenu" element={<FridayMeal /> } />
         <Route path="/saturdaymenu" element={<SaturdayMeal /> } />
         <Route path="/sundaymenu" element={<SundayMeal /> } />
+        <Route exact path="/account" element={<Profile user={user} setUser={setUser} />} />
 
       
         
