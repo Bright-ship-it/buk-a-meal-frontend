@@ -59,7 +59,7 @@ function MealDetails() {
           <button className="btn-view" >Book This Meal</button> 
           </Link>
           <Link to={`/meals`} >
-          <button className="btn-view" >Go Back</button> 
+          <button className="btn-view" >Check-out </button> 
           </Link >      
         </div>
       </div>
