@@ -10,14 +10,14 @@ function NewMealForm() {
   const [image_url, setImage_url] = useState("");
   const [price, setPrice] = useState("");
   const [ingredients, setIngredients] = useState("");
-  const [day, setDay] = useState("");
+  const [category_id, setCategoryID] = useState("");
   const [description, setDescription] = useState("");
 
   const history = useNavigate();
 
   function submitHandler(e) {
     e.preventDefault();
-    const Meal = { name, image_url, price, description,ingredients,day };
+    const Meal = { name, image_url, price, description,ingredients,category_id };
 
     fetch("/meals", {
       method: "POST",
@@ -82,13 +82,13 @@ function NewMealForm() {
           />
         </div>
         <div className={classes.control}>
-        <label htmlFor="day">Day</label>
+        <label htmlFor="day">Day: </label>
         <input
           type="text"
           required
           id="day"
-          value={day}
-          onChange={(e) => setDay(e.target.value)}
+          value={category_id}
+          onChange={(e) => setCategoryID(e.target.value)}
         />
       </div>
         <div className={classes.control}>
