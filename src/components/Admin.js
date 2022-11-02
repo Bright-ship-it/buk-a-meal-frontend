@@ -48,16 +48,15 @@ function Admin() {
       <div className="home-1">
         
         <div className="navs">
-        <NavLink to={"/"} exact="true" className="btn-view-2">
+          <br></br>
+        <NavLink to={"/admin-orders"} exact="true" className="btn-view-2">
           View orders
         </NavLink>
 
         <NavLink to={"/newmealform"} exact="true" className="btn-view-2">
-        Add Meals
+        Add Meal
       </NavLink>
-      <button className="btn-view-2" onClick={handleDestroySession}>
-        Log Out
-      </button>
+
 
       </div>
       
