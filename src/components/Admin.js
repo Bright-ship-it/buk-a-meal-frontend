@@ -43,8 +43,10 @@ function Admin() {
 
   return (
     <div>
+      <Navbar />
+      
       <div className="home-1">
-        <Navbar />
+        
         <div className="navs">
         <NavLink to={"/"} exact="true" className="btn-view-2">
           View orders
@@ -58,10 +60,12 @@ function Admin() {
       </button>
 
       </div>
+      
       </div>
-      <div className="meals-board">
+      
+      {/* <div className="meals-board">
         <h1 className="board">Meals Board</h1>
-      </div>
+      </div> */}
 
       <div className="meals-container">
         {meal.map((meals) => (
