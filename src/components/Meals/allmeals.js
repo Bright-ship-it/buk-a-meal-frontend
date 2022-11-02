@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
 import { useNavigate,useParams } from "react-router-dom";
-import '../Meals/allmeals.css'
+
 import { Link } from "react-router-dom";
 
 

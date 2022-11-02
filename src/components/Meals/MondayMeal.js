@@ -2,8 +2,7 @@ import React from 'react'
 import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
-import '../Meals/meal.css'
-import Orders from '../Orders/Orders';
+
 
 function MondayMeal() {
     const [cards, setCards] = useState([]);

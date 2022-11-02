@@ -834,3 +834,29 @@ font-size: 2.5rem;
   background-color: #2b2eff;
 
 }
+
+.profile{
+  width: 50%;
+  background-color:rgba(128, 128, 128, 0.301);
+  margin-left: 40rem;
+  margin-top: 5rem;
+  height: 50vh;
+}
+
+.profile-image{
+  padding-left: 22rem;
+  margin: 4rem;
+}
+.profile-image > img{
+  padding-top: .1rem;
+  padding-bottom: 3rem;
+}
+.profile-dets > .btn-view{
+  margin-left: 8rem;
+}
+
+.profile-dets > p{
+  margin-left: 8rem;
+  font-size: 2rem;
+
+}

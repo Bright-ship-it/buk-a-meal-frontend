@@ -17,16 +17,16 @@ function Profile({ user, setUser }) {
   return (
     <div>
       <Navbar />
-        <div className="">
-            <div className="">
+        <div className="profile">
+            <div className="profile-image">
                 <img className="" src={pic3} alt="" />
-                <div className="">
+                <div className="profile-dets">
                     <p className="">{user ? (`${user.name}`) : null }</p>
                     <p className="">{user ? (user.email) : null }</p>
                     <p className="">{user ? (user.password) : null }</p>
                     { user ?
-                    <button className="btn-view-1" onClick={handleLogoutClick}>Logout</button> 
-                    : <Link to={"/login"} className="btn-view-1">Sign In</Link>}
+                    <button className="btn-view" onClick={handleLogoutClick}>Logout</button> 
+                    : <Link to={"/login"} className="btn-view">Sign In</Link>}
                 </div>
             </div>
         </div>

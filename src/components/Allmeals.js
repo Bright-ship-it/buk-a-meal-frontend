@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import ReactPaginate from "react-paginate";
 import { Link, NavLink, useParams, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 
