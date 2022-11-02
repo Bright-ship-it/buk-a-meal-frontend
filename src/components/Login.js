@@ -54,7 +54,7 @@ function Login({setUser}) {
     }).then((r) => {
       if (r.ok) {
         r.json().then((user) => {setUser(user)
-          user.admin === true ? navigate("/admin") : navigate("/dashboard");
+          user.admin === true ? navigate("/admin") : navigate("/mondaymenu");
         });
 
         setEmail("");

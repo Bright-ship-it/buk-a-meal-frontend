@@ -16,8 +16,6 @@ function Meals() {
   return (
     <div>
     <Navbar />
-
-
     <div className="meals-container-one">
       {cards.map((card) => (
         <div className="meals-dets-one" key={card.id}>

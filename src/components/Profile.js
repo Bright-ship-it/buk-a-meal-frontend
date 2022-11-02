@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import pic3 from "../components/img/Avatar.png";
+import Navbar from './Navbar'
 
 function Profile({ user, setUser }) {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ function Profile({ user, setUser }) {
 
   return (
     <div>
+      <Navbar />
         <div className="">
             <div className="">
                 <img className="" src={pic3} alt="" />
