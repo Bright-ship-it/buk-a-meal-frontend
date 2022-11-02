@@ -30,8 +30,8 @@ function App() {
     <Router>
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login /> } />
-        <Route path="/register" element={<Register /> } />
+        <Route path="/login" element={<Login user={user} setUser={setUser}/> } />
+        <Route path="/register" element={<Register user={user} setUser={setUser}/> } />
         <Route path="/admin" element={<Admin /> } />
         <Route path="/allmeals/" element={<Allmeals /> } />
         <Route path="/newmealform/" element={<NewMealForm /> } />
@@ -47,6 +47,7 @@ function App() {
         <Route path="/saturdaymenu" element={<SaturdayMeal /> } />
         <Route path="/sundaymenu" element={<SundayMeal /> } />
         <Route exact path="/account" element={<Profile user={user} setUser={setUser} />} />
+     
 
       
         

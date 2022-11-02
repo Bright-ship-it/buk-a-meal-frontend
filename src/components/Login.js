@@ -5,10 +5,11 @@ import meat from "../components/img/logo.jpg";
 
 import "../App.css";
 
-function Login() {
+function Login({setUser}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isShown, setIsShown] = useState(false);
+
 
   const navigate = useNavigate();
   const form = useRef(null);
@@ -40,9 +41,19 @@ function Login() {
         email,
         password,
       }),
+
+    //   .then((r) => {
+    //     if (r.ok) {
+    //       r.json().then((user) => {setUser(user)});
+    //       navigate("/");
+    //     } else {
+    //       r.json().then((err) => setErrors(err.errors));
+    //     }
+    //   });
+    // }
     }).then((r) => {
       if (r.ok) {
-        r.json().then((user) => {
+        r.json().then((user) => {setUser(user)
           user.admin === true ? navigate("/admin") : navigate("/dashboard");
         });
 
