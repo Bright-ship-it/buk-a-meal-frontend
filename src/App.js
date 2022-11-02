@@ -19,9 +19,9 @@ import ThursdayMeal from './components/Meals/ThursdayMeal';
 import FridayMeal from './components/Meals/FridayMeal';
 import SaturdayMeal from './components/Meals/SaturdayMeal';
 import SundayMeal from './components/Meals/SundayMeal';
-
-
 import Profile from "./components/Profile";
+import Orders from './components/Orders/Orders';
+
 function App() {
   const [user, setUser] = useState(null);
   return (
@@ -47,6 +47,7 @@ function App() {
         <Route path="/saturdaymenu" element={<SaturdayMeal /> } />
         <Route path="/sundaymenu" element={<SundayMeal /> } />
         <Route exact path="/account" element={<Profile user={user} setUser={setUser} />} />
+        <Route path="/orders/:mealId" element={<Orders /> } />
 
       
         

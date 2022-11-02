@@ -1,0 +1,39 @@
+.top-order{
+    display: flex;
+}
+.left-order{
+    /* display: flex; */
+    width: 70%;   
+}
+.meals-det-1-1{
+    width: 80%;
+    background-color:white;
+    border-radius: 3rem;
+    /* margin: 3rem; */
+    padding-bottom: 3rem;
+  
+  }
+
+  .meals-image-1-1{
+    object-fit: cover;
+    width: 60%;
+  }
+  .meals-image-1-1 img{
+    width: 100%;
+    height: 38vh;
+    
+  }
+  .meals-det-1 > h2{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    font-weight: 900;
+    color: black;
+  }
+  .meals-det-1 >h3{
+    font-size: 3rem;
+    font-weight: 800;
+    color: black;
+  }
+  .meals-det-1 > h4{
+    font-size: 2rem;
+  }

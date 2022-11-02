@@ -3,6 +3,7 @@ import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import '../Meals/meal.css'
+import Orders from '../Orders/Orders';
 
 function MondayMeal() {
     const [cards, setCards] = useState([]);
@@ -47,8 +48,10 @@ function MondayMeal() {
               <button className="btn-view-one">View</button>
             </Link>
 
-            <Link to={`/reviews/${card.id}`}>
+            <Link to={`/orders/${card.id}`}>
+              {/* <Orders > */}
             <button className="btn-view-one btn-view2">Order Now</button>
+            {/* </Orders> */}
           </Link>
   
           </div>
