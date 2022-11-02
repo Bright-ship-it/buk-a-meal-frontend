@@ -8,9 +8,9 @@ function Meals() {
     const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("/categories/1")
+    fetch("/meals")
       .then((response) => response.json())
-      .then((data) => setCards(data.meals));
+      .then((data) => setCards(data));
   }, []);
 
   return (
@@ -34,7 +34,7 @@ function Meals() {
               <button className="btn-view-one">View</button>
             </Link>
 
-            <Link to={`/reviews/${card.id}`}>
+            <Link to={`/orders/${card.id}`}>
             <button className="btn-view-one btn-view2">Order Now</button>
           </Link>
   
