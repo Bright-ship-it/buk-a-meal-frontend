@@ -21,6 +21,7 @@ import SaturdayMeal from './components/Meals/SaturdayMeal';
 import SundayMeal from './components/Meals/SundayMeal';
 import Profile from "./components/Profile";
 import Orders from './components/Orders/Orders';
+import Cart from './components/Cart';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -48,6 +49,7 @@ function App() {
         <Route path="/sundaymenu" element={<SundayMeal /> } />
         <Route exact path="/account" element={<Profile user={user} setUser={setUser} />} />
         <Route path="/orders/:mealId" element={<Orders /> } />
+        <Route path="/cart" element={<Cart /> } />
 
       
         
