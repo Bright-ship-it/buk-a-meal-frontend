@@ -29,7 +29,7 @@ body {
 /*start of navbar*/
 
 .navs{
-  padding: 3rem;
+  padding-left: 5rem;
  
 }
 .navs > .btn-view-2{
@@ -92,12 +92,12 @@ body {
 
 
 
-.home-1 {
-  display: flex;
+/* .home-1 {
+  
  
-}
+} */
 .home-1 > .btn-view-1{
-  margin-left: 20rem;
+  margin-left: 1rem;
   background-color: #0a0a23;
   border: none;
   color: white;
@@ -620,8 +620,8 @@ li:active {
 .meals-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 5rem;
+  justify-content:space-between;
+  padding: 3rem;
  
 }   
 
@@ -638,7 +638,7 @@ li:active {
 .meals-image > img{
   object-fit: cover;
 }
-.meals-image img{
+.meals-image > img{
   width: 100%;
   height: 30vh;
   
@@ -647,6 +647,41 @@ li:active {
   font-size: 2rem;
   padding-left: 1rem;
   line-height: 1.7;
+}
+/* .meals-det-1 > h1{
+  font-size: 3.5rem;
+
+}
+
+.meals-det-1 > h2{
+  font-size: 1rem;
+  color: red;
+} */
+
+
+.meals-board-one{
+  padding: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  display: flex;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border-radius: 1rem;
+  background-color: #0a0a23;
+  
+ 
+}
+
+
+.board-one{
+  text-align: center;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background-color: #0a0a23;
+  border-radius: 2rem;
+  color: white;
+  margin-left: 30px;
 }
 .btn-view{
   background-color: #0a0a23;
@@ -658,11 +693,12 @@ li:active {
   min-height: 1rem;
   min-width: 1rem;
   text-decoration: none;
+  font-size: 2rem;
   
 }
 
 
-btn-meals{
+.btn-meals{
   display: flex;
   flex-wrap: wrap;
 }
@@ -706,6 +742,12 @@ btn-meals{
 
 
 .btn-view-2:hover{
+  background-color: #002ead;
+  transition: 0.7s;
+
+}
+
+.btn-view:hover{
   background-color: #002ead;
   transition: 0.7s;
 
