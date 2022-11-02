@@ -45,8 +45,8 @@ function TuesdayMeal() {
               <button className="btn-view-one">View</button>
             </Link>
 
-            <Link to={`/reviews/${card.id}`}>
-            <button className="btn-view-one btn-view2">Order Now</button>
+            <Link to={`/orders/${card.id}`}>
+            <button className="btn-view-one btn-view2">Order Now</button>  
           </Link>
   
           </div>
