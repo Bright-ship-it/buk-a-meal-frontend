@@ -865,16 +865,32 @@ font-size: 2.5rem;
   width: 50%;
   background-color: rgba(128, 128, 128, 0.356);
   margin-left: 40rem;
-
   margin-top: 10rem;
+}
+.orders-container > h1{
+  font-size: 4rem;
+  text-align: center;
+}
+
+
+.orders-container > .header{
+  display:flex;
+  justify-content: space-between;
+  margin-left: 12rem;
+  margin-right: 10rem;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .order-details{
   display: flex;
   justify-content: space-around;
-  
+  padding: 1rem;
 }
 span{
   font-size: 3rem;
   font-weight: 900;
+}
+hr{
+  border-color: #0a0a23;
 }

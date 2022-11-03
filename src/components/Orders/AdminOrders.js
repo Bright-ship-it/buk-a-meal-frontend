@@ -14,18 +14,35 @@ function AdminOrders() {
 
   return (
     <div className="table">
+  
       <div className="orders-container">
+      <h1>Orders Table</h1>
+      <hr/>
+      <div className="header">
+    
+      <h1>OrderName</h1>
+      <hr/>
+      <h1>Price</h1>
+      </div>
+      <hr/>
         {cards.map((card) => (
           <div className="order-details" key={card.id}>
             
           <div>
               <h1>{card.name}</h1>
             </div>
+
+            
             
             <div>
               <h1>{card.price}</h1>
             </div>
+
+            
+
+            
           </div>
+          
         ))}
       </div>
     </div>
