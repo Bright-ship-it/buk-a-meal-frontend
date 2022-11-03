@@ -13,7 +13,7 @@ function MealDetails() {
   
   
     useEffect(() => {
-      fetch(`/meals/${params.mealId}`)
+      fetch(`https://buk-a-meal.herokuapp.com/meals/${params.mealId}`)
         .then((response) => response.json())
         .then((data) => setMeals(data));
     }, );

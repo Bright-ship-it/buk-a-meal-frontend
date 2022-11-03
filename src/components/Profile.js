@@ -7,7 +7,7 @@ function Profile({ user, setUser }) {
 
   function handleLogoutClick(e) {
     e.preventDefault();
-    fetch("/logout", 
+    fetch("https://buk-a-meal.herokuapp.com/logout", 
     { method: "DELETE" }
     ).then((r) => {
       if (r.ok) {

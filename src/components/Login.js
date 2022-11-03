@@ -31,7 +31,7 @@ function Login({setUser}) {
       })
     );
 
-    fetch("/login", {
+    fetch("https://buk-a-meal.herokuapp.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,17 +40,7 @@ function Login({setUser}) {
       body: JSON.stringify({
         email,
         password,
-      }),
-
-    //   .then((r) => {
-    //     if (r.ok) {
-    //       r.json().then((user) => {setUser(user)});
-    //       navigate("/");
-    //     } else {
-    //       r.json().then((err) => setErrors(err.errors));
-    //     }
-    //   });
-    // }
+      })
     }).then((r) => {
       if (r.ok) {
         r.json().then((user) => {setUser(user)

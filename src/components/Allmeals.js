@@ -9,7 +9,7 @@ function Allmeals() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/meals")
+    fetch("https://buk-a-meal.herokuapp.com/meals")
       .then((response) => response.json())
       .then((data) => setMeals(data));
   }, []);

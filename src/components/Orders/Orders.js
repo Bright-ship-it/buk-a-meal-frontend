@@ -16,7 +16,7 @@ function Orders({ user, setUser }) {
       e.preventDefault();
       const Meal = { name, price,};
   
-      fetch("/orders", {
+      fetch("https://buk-a-meal.herokuapp.com/orders", {
         method: "POST",
         headers: {
           'Content-Type':'application/json',
@@ -54,7 +54,7 @@ function Orders({ user, setUser }) {
     //   fetch
     // }
     const handleDelete = () => {
-      fetch("/meals/" +meal.id, {
+      fetch("https://buk-a-meal.herokuapp.com/meals/" +meal.id, {
         method: "DELETE",
       }).then(() => {
         history("/allmeals");
