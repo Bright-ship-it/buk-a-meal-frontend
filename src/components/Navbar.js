@@ -21,7 +21,7 @@ function Navbar({ user }) {
               <h3 className="">{user ? `${user.first_name}` : "Account"}</h3>
             </Link>
 
-            <NavLink to={"/"} exact="true" className="btn-text">
+            <NavLink to={"/admin-orders"} exact="true" className="btn-text">
               Orders
             </NavLink>
           </ul>
