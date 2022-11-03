@@ -5,6 +5,23 @@
     /* display: flex; */
     width: 70%;   
 }
+.top-order{
+  margin-left: 20rem;
+  margin-top: 5rem;
+
+}
+label{
+  font-size: 2rem;
+}
+input{
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  border-style: none;
+  font-size: 2rem;
+}
+
+
 .meals-det-1-1{
     width: 80%;
     background-color:white;

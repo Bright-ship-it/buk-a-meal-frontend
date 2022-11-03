@@ -89,6 +89,7 @@ function Orders({ user, setUser }) {
             value={meal.name}
             onSelect={(e) => setName(e.target.value)}
           />
+          <br/>
                <label htmlFor="name">Price</label>
           <input
             type="text"
