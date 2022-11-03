@@ -48,7 +48,7 @@ function App() {
         <Route path="/saturdaymenu" element={<SaturdayMeal /> } />
         <Route path="/sundaymenu" element={<SundayMeal /> } />
         <Route exact path="/account" element={<Profile user={user} setUser={setUser} />} />
-        <Route path="/orders/:mealId" element={<Orders /> } />
+        <Route path="/orders/:mealId" element={<Orders user={user} setUser={setUser} />} />
         <Route path="/admin-orders" element={<AdminOrders /> } />
         
 
