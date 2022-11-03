@@ -31,7 +31,7 @@ function Login({setUser}) {
       })
     );
 
-    fetch("/login", {
+    fetch("https://buk-a-meal.herokuapp.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
