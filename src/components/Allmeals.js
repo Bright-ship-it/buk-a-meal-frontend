@@ -9,7 +9,7 @@ function Allmeals() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://buk-a-meal.herokuapp.com/meals")
+    fetch("/meals")
       .then((response) => response.json())
       .then((data) => setMeals(data));
   }, []);
@@ -20,7 +20,7 @@ function Allmeals() {
 
   function handleDestroySession(e) {
     e.preventDefault();
-    fetch("https://buk-a-meal.herokuapp.com/logout", {
+    fetch("/logout", {
       method: "DELETE",
     }).then((r) => {
       if (r.ok) {

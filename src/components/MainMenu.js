@@ -16,7 +16,7 @@ function MainMenu() {
     const navigate = useNavigate()
     function handleDestroySession(e) {
     e.preventDefault();
-    fetch("https://buk-a-meal.herokuapp.com/logout", {
+    fetch("/logout", {
       method: "DELETE"
     })
     .then((r) => {

@@ -16,7 +16,7 @@ function Orders({ user, setUser }) {
       e.preventDefault();
       const Meal = { name, price,};
   
-      fetch("https://buk-a-meal.herokuapp.com/orders", {
+      fetch("/orders", {
         method: "POST",
         headers: {
           'Content-Type':'application/json',
@@ -34,7 +34,7 @@ function Orders({ user, setUser }) {
   
   
     useEffect(() => {
-      fetch(`https://buk-a-meal.herokuapp.com/meals/${params.mealId}`)
+      fetch(`/meals/${params.mealId}`)
         .then((response) => response.json())
         .then((data) => setMeals(data));
     }, );
@@ -54,7 +54,7 @@ function Orders({ user, setUser }) {
     //   fetch
     // }
     const handleDelete = () => {
-      fetch("https://buk-a-meal.herokuapp.com/meals/" +meal.id, {
+      fetch("/meals/" +meal.id, {
         method: "DELETE",
       }).then(() => {
         history("/allmeals");

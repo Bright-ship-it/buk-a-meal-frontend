@@ -14,7 +14,7 @@ function Allmealsdetails() {
   
   
     useEffect(() => {
-      fetch(`https://buk-a-meal.herokuapp.com/meals/${params.mealId}`)
+      fetch(`/meals/${params.mealId}`)
         .then((response) => response.json())
         .then((data) => setMeals(data));
     }, );
@@ -31,7 +31,7 @@ function Allmealsdetails() {
   
     const history = useNavigate();
     const handleDelete = () => {
-      fetch("https://buk-a-meal.herokuapp.com/meals/" +meal.id, {
+      fetch("/meals/" +meal.id, {
         method: "DELETE",
       }).then(() => {
         history("/allmeals");
