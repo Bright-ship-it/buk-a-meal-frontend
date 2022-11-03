@@ -874,3 +874,7 @@ font-size: 2.5rem;
   justify-content: space-around;
   
 }
+span{
+  font-size: 3rem;
+  font-weight: 900;
+}

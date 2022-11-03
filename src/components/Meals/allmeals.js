@@ -47,11 +47,11 @@ function MealDetails() {
           <img src={meal.image_url} alt="article url" />
         </div>
         <div className="meals-det-1">
-          <h1>{meal.name}</h1>
-          <h2>ingredient: {meal.ingredients}</h2>
-          <h3>Price Ksh{meal.price}</h3>
-          <h5>Desc: {meal.description}</h5>
-          <h4>{meal.created_at}</h4>
+          <h2>{meal.name}</h2>
+          <h1><span>ingredient</span> <br/>{meal.ingredients}</h1>
+          <h5>Price Ksh:{meal.price}</h5>
+          <h1><span>Desc</span> <br/>{meal.description}</h1>
+     
         </div>
 
         <div className="btn">
