@@ -43,9 +43,7 @@ function Allmeals() {
           <NavLink to={"/newmealform"} exact="true" className="btn-view-2">
             Add Meals
           </NavLink>
-          <button className="btn-view-2" onClick={handleDestroySession}>
-            Log Out
-          </button>
+       
         </div>
       </div>
  
