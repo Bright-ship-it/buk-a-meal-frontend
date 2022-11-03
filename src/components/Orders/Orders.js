@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-import { useNavigate,useParams } from "react-router-dom";
+import { useNavigate,useParams,Link } from "react-router-dom";
 
 import '../Orders/order.css'
 
 
-function Orders() {
+function Orders({ user, setUser }) {
   const [ name, setName] = useState([])
   const [ price, setPrice] = useState([])
     const params = useParams();
@@ -113,7 +113,9 @@ function Orders() {
 {/*     
           <Link to={`/checkout`} > */}
             <h1>Total: {meal.price}</h1>
-          <button className="btn-view" onClick={submitHandler} >Check-out </button> 
+            { user ?
+          <button className="btn-view" onClick={submitHandler} >Check-out </button> :
+          <Link to={"/login"} className="btn-view">Sign In</Link>}
           {/* onClick={handleSubmit()}  */}
           {/* </Link >       */}
         </div>
