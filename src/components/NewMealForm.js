@@ -19,7 +19,7 @@ function NewMealForm() {
     e.preventDefault();
     const Meal = { name, image_url, price, description,ingredients,category_id };
 
-    fetch("/meals", {
+    fetch("https://buk-a-meal.herokuapp.com/meals", {
       method: "POST",
       headers: {
         'Content-Type':'application/json',

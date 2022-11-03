@@ -13,7 +13,7 @@ function Register() {
 
   function handlesubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/users", {
+    fetch("https://buk-a-meal.herokuapp.com/users", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify({
