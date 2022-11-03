@@ -79,7 +79,7 @@ function Orders({ user, setUser }) {
           <h2 value={price}
             onChange={(e) => setPrice(e.target.value)}
           >Price Ksh{meal.price}</h2>
-          {/* <h5>Desc: {meal.description}</h5> */}
+    
           <h4>{meal.created_at}</h4>
           <label htmlFor="name">Name</label>
           <input
@@ -100,24 +100,17 @@ function Orders({ user, setUser }) {
           />
         </div>
         </div>
-        {/* <div>
-          <h1> Meals for how many?</h1>
-          <button>1</button> <br></br>
-          <button>2</button> <br></br>
-          <button>3</button> <br></br>
-        </div> */}
+      
         </div>
         <div className="right-order">
 
         <div className="btn">
-{/*     
-          <Link to={`/checkout`} > */}
+
             <h1>Total: {meal.price}</h1>
             { user ?
           <button className="btn-view" onClick={submitHandler} >Check-out </button> :
           <Link to={"/login"} className="btn-view">Sign In</Link>}
-          {/* onClick={handleSubmit()}  */}
-          {/* </Link >       */}
+        
         </div>
         </div>
       

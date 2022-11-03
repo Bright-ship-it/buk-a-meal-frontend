@@ -860,3 +860,17 @@ font-size: 2.5rem;
   font-size: 2rem;
 
 }
+
+.orders-container{
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.356);
+  margin-left: 40rem;
+
+  margin-top: 10rem;
+}
+
+.order-details{
+  display: flex;
+  justify-content: space-around;
+  
+}
