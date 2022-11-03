@@ -25,7 +25,7 @@ function Orders({ user, setUser }) {
         body: JSON.stringify(Meal),
       
       }).then(() => {
-        history("/meals");
+        history("/mondaymenu");
         alert(" Meal was booked successfully")
       })
       .catch((error)=>console.log(error))

@@ -36,7 +36,7 @@ function Allmeals() {
       <div className="home-1">
         <Navbar />
         <div className="navs">
-          <NavLink to={"/"} exact="true" className="btn-view-2">
+          <NavLink to={"/admin-orders"} exact="true" className="btn-view-2">
             View orders
           </NavLink>
 

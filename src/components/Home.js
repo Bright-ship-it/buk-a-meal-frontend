@@ -63,9 +63,9 @@ function Home() {
           <h1>History</h1>
           <h3>Strange Stories of Emergence of Healthy Foods</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo
-            quo, eligendi iusto incidunt perspiciatis repudiandae doloremque
-           
+          You are what you eat, but you're also, to a surprisingly large degree, 
+          what your parents ate. The Secret History of Food begins with what we consumed in the womb. Crazy isnt?
+         
           </p>
           <NavLink to={"/"} exact="true" className="btn-text">
           Read-More
@@ -83,8 +83,9 @@ function Home() {
       <h1>Community</h1>
       <h3>Healthy food in social networks, with us is interesting</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo
-        quo, eligendi iusto incidunt perspiciatis repudiandae doloremque
+      ocial media, such as Instagram, changed the way many people consume food. 
+      Photos of food are used on Instagram in photographic exchanges to identify and interact with the community 
+      and are the second most popular Instagram topic after selfies .
        
       </p>
       <NavLink to={"/"} exact="true" className="btn-text">
@@ -97,11 +98,13 @@ function Home() {
   </div>
 
      <div className="about-info">
-      <h1>Phillosophy</h1>
+      <h1>Philosophy</h1>
       <h3>Only the Best Food,the best musicians the best guests</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo
-        quo, eligendi iusto incidunt perspiciatis repudiandae doloremque
+      What's better than good food and music to break the monotony of life! 
+      Be it after a busy workday or over the weekends, 
+      we love meeting up friends for some candid conversation, 
+      foods and drinks.
        
       </p>
       <NavLink to={"/"} exact="true" className="btn-text">

@@ -29,6 +29,7 @@ body {
 /*start of navbar*/
 
 .navs{
+  margin: 2rem;
   padding-left: 5rem;
  
 }

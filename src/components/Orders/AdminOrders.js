@@ -37,9 +37,9 @@ function AdminOrders() {
           </div>
         ))}
 
-        <div className="total">
+        {/* <div className="total">
               <h1>price</h1>
-            </div>
+            </div> */}
 
 
         </div>
