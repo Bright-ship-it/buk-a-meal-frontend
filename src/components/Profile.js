@@ -5,11 +5,16 @@ import Navbar from './Navbar'
 function Profile({ user, setUser }) {
   const navigate = useNavigate();
 
-  function handleLogoutClick() {
-    fetch("https://buk-a-meal.herokuapp.com/logout", { method: "DELETE" }).then((r) => {
+  function handleLogoutClick(e) {
+    e.preventDefault();
+    fetch("https://buk-a-meal.herokuapp.com/logout", 
+    { method: "DELETE" }
+    ).then((r) => {
       if (r.ok) {
         setUser(null);
         navigate("/");
+      }else {
+        alert("This session has not been stored!");
       }
     });
   }
