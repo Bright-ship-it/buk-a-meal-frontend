@@ -7,7 +7,7 @@ function Meals() {
     const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("/meals")
+    fetch("https://buk-a-meal.herokuapp.com/meals")
       .then((response) => response.json())
       .then((data) => setCards(data));
   }, []);

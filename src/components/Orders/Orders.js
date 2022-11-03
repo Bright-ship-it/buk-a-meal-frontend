@@ -54,7 +54,7 @@ function Orders({ user, setUser }) {
     //   fetch
     // }
     const handleDelete = () => {
-      fetch("/meals/" +meal.id, {
+      fetch("https://buk-a-meal.herokuapp.com/meals/" +meal.id, {
         method: "DELETE",
       }).then(() => {
         history("/allmeals");

@@ -7,7 +7,7 @@ function AdminOrders() {
     const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("/orders")
+    fetch("https://buk-a-meal.herokuapp.com/orders")
       .then((response) => response.json())
       .then((data) => setCards(data));
   }, []);
